@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">testMerge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="txt_error_permission">"权限检测失败，请检查应用权限设置"</string>
+    <string name="text_start_face_detect">启动检测</string>
+    <string name="text_single_image_detect">单张图片检测</string>
+    <string name="text_camera_front">1</string>
+    <string name="text_camera_back">0</string>
+    <string name="text_is_has_face">是否有人脸</string>
+    <string name="text_face_coordinates">人脸坐标</string>
+    <string name="text_no_face_detected">未检测到人脸</string>
+    <string name="text_camera_open">摄像头打开</string>
+    <string name="text_camera_close">摄像头关闭</string>
+    <string name="text_active">激活</string>
+    <string name="text_active_hint">非我司摄像头需要输入appid激活</string>
+    <string name="text_active_hint1">激活请输入appid，联系商务获取</string>
+    <string name="text_initialization">初始化中...</string>
+
+</resources>

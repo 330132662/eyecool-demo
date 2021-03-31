@@ -1,3 +1,4 @@
+include ':testmerge'
 include ':app_compare'
 include ':app_detect'
 include ':app_duallive'

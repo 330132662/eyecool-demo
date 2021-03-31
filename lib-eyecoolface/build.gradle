@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-
-
 /*
 plugins {
     id 'digital.wup.android-maven-publish' version '3.6.2'

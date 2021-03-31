@@ -20,7 +20,6 @@ android {
         targetSdkVersion 28
         versionCode 2
         versionName rootProject.ext.versionName
-
         multiDexEnabled true
     }
 
@@ -65,11 +64,11 @@ android {
         abortOnError false
     }
 
-    applicationVariants.all { variant ->
+    /*applicationVariants.all { variant ->
         variant.outputs.all { output ->
             outputFileName = "ec_detect_${variant.buildType.name}_v${defaultConfig.versionName}_${defaultConfig.versionCode}_${releaseTime()}.apk"
         }
-    }
+    }*/
 }
 
 dependencies {

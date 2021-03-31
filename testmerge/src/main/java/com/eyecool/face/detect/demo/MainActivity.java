@@ -14,14 +14,14 @@ import android.widget.Toast;
 import com.eyecool.face.api.FaceApi;
 import com.eyecool.utils.Logs;
 import com.eyecool.utils.SharedPreferenceUtil;
+import com.juhuiwangluo.testmerge.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * yuan 原demo 检测
+ * 人脸检测
  */
-@Deprecated
 public class MainActivity extends AppCompatActivity {
 
     public static final int REQUEST_PERMISSIONS_CODE = 11;
