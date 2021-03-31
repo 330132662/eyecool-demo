@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <com.eyecool.camera.view.CameraTextureView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <com.eyecool.face.detect.demo.view.FrameFaceView
+            android:id="@+id/frameView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/hintTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#55000000"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/dp_16" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/settingIv"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="@dimen/dp_56"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_setting" />
+
+</RelativeLayout>

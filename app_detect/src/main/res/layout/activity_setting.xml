@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context=".SettingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摄像头ID号"
+        android:textSize="@dimen/dp_16" />
+
+    <RadioGroup
+        android:id="@+id/cameraRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/camera0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_camera_back"/>
+
+        <RadioButton
+            android:id="@+id/camera1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_camera_front"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="预览显示角度" />
+
+    <RadioGroup
+        android:id="@+id/previewRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/previewRadio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/previewRadio90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/previewRadio180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/previewRadio270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="270"></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="摄像头数据旋转角度" />
+
+    <RadioGroup
+        android:id="@+id/rotateRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rotateRadio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rotateRadio90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rotateRadio180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rotateRadio270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="270"></RadioButton>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="强制预览比例" />
+
+    <RadioGroup
+        android:id="@+id/scaleRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/scaleRadio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/scaleRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:3"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/scaleRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:4"></RadioButton>
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/previewMirror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="预览是否镜像" />
+
+    <Switch
+        android:id="@+id/dataMirror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="数据是否镜像" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="保存" />
+
+</LinearLayout>

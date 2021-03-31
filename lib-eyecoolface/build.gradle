@@ -1,0 +1,114 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
+
+
+/*
+plugins {
+    id 'digital.wup.android-maven-publish' version '3.6.2'
+}
+*/
+
+
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "ENABLE_API_LOG", "false")
+        }
+        debug {
+            buildConfigField("boolean", "ENABLE_API_LOG", "false")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task androidJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    failOnError = false
+    options.encoding = "UTF-8"
+    options.charSet = "UTF-8"
+    options.docEncoding = "UTF-8"
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    archiveClassifier = 'javadoc'
+    from androidJavadocs.destinationDir
+}
+
+task androidSourcesJar(type: Jar) {
+    archiveClassifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            faceapi_app(MavenPublication) {
+                artifact androidSourcesJar
+                artifact androidJavadocsJar
+                artifact bundleReleaseAar
+                // artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
+                groupId = 'cn.eyecool'
+                artifactId = 'faceapi-app'
+                version = '2.2.1'
+
+                pom {
+                    name = "faceapi_app"
+                    description = "EyeCool Face API lib for android"
+                    url = "www.eyecool.cn"
+                    /*
+                    licenses {
+                        license {
+                            name = "The Apache License, Version 2.0"
+                            url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                        }
+                    }
+                    */
+                    /*
+                    developers {
+                        developer {
+                            id = ""
+                            name = ""
+                            email = ""
+                        }
+                    }
+                    */
+                    scm {
+                        connection = "scm:git:http://gitlab.eyecool.site/gitlab/SDK_face/face_standard_android"
+                        developerConnection = "scm:git:http://gitlab.eyecool.site/gitlab/SDK_face/face_standard_android"
+                        url = "http://gitlab.eyecool.site/gitlab/SDK_face/face_standard_android"
+                    }
+                }
+            }
+        }
+        repositories {
+            maven {
+                url = "http://nexus.eyecool.site/nexus/content/repositories/releases"
+                credentials {
+                    username = "deployment" //System.getenv('nexus_username')
+                    password = "123456" // System.getenv('nexus_password')
+                    // username = "deployment"
+                    // password = "123456"
+                }
+            }
+        }
+    }
+}
