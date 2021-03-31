@@ -1,0 +1,7 @@
+include ':app_compare'
+include ':app_detect'
+include ':app_duallive'
+include ':lib-eyecoolface'
+include ':lib-eyecoolface-compare'
+include ':lib-eyecoolface-detect'
+include ':lib-eyecoolface-duallive'
