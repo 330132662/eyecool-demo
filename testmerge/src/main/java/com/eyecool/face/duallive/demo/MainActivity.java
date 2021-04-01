@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.eyecool.face.api.FaceApi;
 import com.eyecool.face.api.FaceLiveApi;
 import com.eyecool.utils.SharedPreferenceUtil;
+import com.juhuiwangluo.testmerge.R;
 
 import java.util.ArrayList;
 import java.util.List;

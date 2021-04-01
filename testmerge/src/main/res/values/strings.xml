@@ -26,4 +26,22 @@
     <string name="text_active_hint1">激活请输入appid，联系商务获取</string>
     <string name="text_initialization">初始化中...</string>
 
+    <string name="text_open_camera_with_sys">系统相机打开双模</string>
+    <string name="text_activation_success">激活成功</string>
+    <string name="text_activation_fails">激活失败</string>
+    <string name="text_being_tested">正在检测中</string>
+    <string name="text_start_test">开始检测</string>
+    <string name="text_stop_test">停止检测</string>
+    <string name="text_param_setting">参数设置</string>
+    <string name="text_confirm">确认</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_camera_open_error_hint">摄像头打开失败，重试次数</string>
+    <string name="text_do_not_shake">请不要晃动</string>
+    <string name="text_be_closer">请向前靠近一点</string>
+    <string name="text_be_further">请向后远离一点</string>
+    <string name="text_face_facing_camera">请正脸面对镜头</string>
+    <string name="text_look_directly_at_the_camera">请直视摄像头</string>
+    <string name="text_detect_timeout">检测超时</string>
+    <string name="text_live_success">检活成功</string>
+
 </resources>

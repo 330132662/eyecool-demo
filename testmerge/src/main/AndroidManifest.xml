@@ -36,9 +36,16 @@
         <activity
             android:name="com.eyecool.face.detect.demo.MainActivity"
             android:exported="true" />
+        <!--        检测 -->
         <activity android:name="com.eyecool.face.detect.demo.DetectJpgActivity" />
         <activity android:name="com.eyecool.face.detect.demo.FaceTestActivity" />
         <activity android:name="com.eyecool.face.detect.demo.SettingActivity" />
+
+        <!--        检活-->
+        <activity android:name="com.eyecool.face.duallive.demo.DualSysCameraActivity" />
+        <activity android:name="com.eyecool.face.duallive.demo.MainActivity" />
+        <activity android:name="com.eyecool.face.duallive.demo.SettingActivity" />
+        <!--        对比 -->
     </application>
 
 </manifest>

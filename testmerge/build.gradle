@@ -43,6 +43,6 @@ dependencies {
 //    implementation project(':app_detect')
     implementation project(':lib-eyecoolface')
     implementation project(':lib-eyecoolface-detect')
-//    implementation project(':lib-eyecoolface-duallive')
+    implementation project(':lib-eyecoolface-duallive')
 //    implementation project(':lib-eyecoolface-compare')
 }

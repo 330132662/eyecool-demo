@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.eyecool.face.duallive.demo.config.DualFaceConfig;
 import com.eyecool.face.duallive.demo.fragment.DualSysCameraFragment;
 import com.eyecool.utils.SharedPreferenceUtil;
+import com.juhuiwangluo.testmerge.R;
 
 import static com.eyecool.camera.config.CameraConfig.CAMERA_0;
 import static com.eyecool.camera.config.CameraConfig.CAMERA_1;
