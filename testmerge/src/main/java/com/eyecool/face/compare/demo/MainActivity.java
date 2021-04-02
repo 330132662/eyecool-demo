@@ -36,10 +36,15 @@ import com.eyecool.utils.FileUtils;
 import com.eyecool.utils.ImageTools;
 import com.eyecool.utils.Logs;
 import com.eyecool.utils.SharedPreferenceUtil;
+import com.juhuiwangluo.testmerge.R;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * 对比
+ */
 
 public class MainActivity extends AppCompatActivity {
 

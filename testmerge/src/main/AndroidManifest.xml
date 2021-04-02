@@ -46,6 +46,7 @@
         <activity android:name="com.eyecool.face.duallive.demo.MainActivity" />
         <activity android:name="com.eyecool.face.duallive.demo.SettingActivity" />
         <!--        对比 -->
+        <activity android:name="com.eyecool.face.compare.demo.MainActivity" />
     </application>
 
 </manifest>

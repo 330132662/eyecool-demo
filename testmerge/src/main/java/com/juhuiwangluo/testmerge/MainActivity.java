@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                loadActivity(com.eyecool.face.detect.demo.MainActivity.class);
-                loadActivity(com.eyecool.face.duallive.demo.MainActivity.class);
+//                loadActivity(com.eyecool.face.duallive.demo.MainActivity.class);
+                loadActivity(com.eyecool.face.compare.demo.MainActivity.class);
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
